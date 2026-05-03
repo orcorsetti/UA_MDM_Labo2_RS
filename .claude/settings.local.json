@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(C:/Users/ornec/anaconda3/envs/ldi2_pt28/python.exe -c \"import pyarrow; print\\(pyarrow.__version__\\)\")",
+      "Bash(C:/Users/ornec/anaconda3/envs/ldi2_pt28/python.exe -c \"import streamlit; print\\(streamlit.__version__\\)\")",
+      "Bash(C:/Users/ornec/anaconda3/envs/ldi2_pt28/python.exe -c \"import numpy; print\\(numpy.__version__\\)\")",
+      "Bash(C:/Users/ornec/anaconda3/envs/ldi2_pt28/python.exe *)",
+      "PowerShell(& C:/Users/ornec/anaconda3/Scripts/conda.exe run -n ldi2_pt28 pip install --force-reinstall pyarrow 2>&1)",
+      "PowerShell(& C:/Users/ornec/anaconda3/Scripts/conda.exe run -n ldi2_pt28 python -c \"import pyarrow; print\\(pyarrow.__version__\\)\" 2>&1)",
+      "PowerShell(Get-Content *)",
+      "PowerShell(& C:/Users/ornec/anaconda3/envs/ldi2_pt28/python.exe -c \"import pyarrow; print\\(pyarrow.__version__\\)\")",
+      "PowerShell(& C:/Users/ornec/anaconda3/envs/ldi2_pt28/python.exe -m pip install \"pyarrow==14.0.2\" --no-cache-dir 2>&1 | Select-Object -Last 10)",
+      "PowerShell(& C:/Users/ornec/anaconda3/envs/ldi2_pt28/python.exe -c \"import pyarrow; print\\('OK, version:', pyarrow.__version__\\)\")",
+      "PowerShell(& C:/Users/ornec/anaconda3/envs/ldi2_pt28/python.exe -c \"import numpy; print\\(numpy.__version__\\)\")",
+      "PowerShell(& C:/Users/ornec/anaconda3/envs/ldi2_pt28/python.exe -m pip install \"pyarrow==17.0.0\" --no-cache-dir 2>&1 | Select-Object -Last 8)",
+      "PowerShell(& C:/Users/ornec/anaconda3/envs/ldi2_pt28/Scripts/streamlit.exe run d:/GitHub/UA_MDM_Labo2_RS/scripts/custom/dashboard.py 2>&1 | Select-Object -First 10)",
+      "PowerShell(& C:/Users/ornec/anaconda3/envs/ldi2_pt28/Scripts/streamlit.exe run d:/GitHub/UA_MDM_Labo2_RS/scripts/custom/dashboard.py --server.headless true 2>&1)"
+    ]
+  }
+}
