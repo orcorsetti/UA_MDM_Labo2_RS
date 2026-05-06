@@ -14,7 +14,23 @@
       "PowerShell(& C:/Users/ornec/anaconda3/envs/ldi2_pt28/python.exe -c \"import numpy; print\\(numpy.__version__\\)\")",
       "PowerShell(& C:/Users/ornec/anaconda3/envs/ldi2_pt28/python.exe -m pip install \"pyarrow==17.0.0\" --no-cache-dir 2>&1 | Select-Object -Last 8)",
       "PowerShell(& C:/Users/ornec/anaconda3/envs/ldi2_pt28/Scripts/streamlit.exe run d:/GitHub/UA_MDM_Labo2_RS/scripts/custom/dashboard.py 2>&1 | Select-Object -First 10)",
-      "PowerShell(& C:/Users/ornec/anaconda3/envs/ldi2_pt28/Scripts/streamlit.exe run d:/GitHub/UA_MDM_Labo2_RS/scripts/custom/dashboard.py --server.headless true 2>&1)"
+      "PowerShell(& C:/Users/ornec/anaconda3/envs/ldi2_pt28/Scripts/streamlit.exe run d:/GitHub/UA_MDM_Labo2_RS/scripts/custom/dashboard.py --server.headless true 2>&1)",
+      "Bash(Get-ChildItem D:\\\\GitHub\\\\UA_MDM_Labo2_RS\\\\data\\\\tabular *)",
+      "PowerShell(python -c \"import pandas as pd; df = pd.read_csv\\(r'D:\\\\GitHub\\\\UA_MDM_Labo2_RS\\\\data\\\\tabular\\\\train_processed.csv'\\); print\\('Cols:', df.columns.tolist\\(\\)\\); print\\('Shape:', df.shape\\); print\\('zips:', sorted\\(df['zipcode'].unique\\(\\)\\)\\)\")",
+      "Bash(python -c ' *)",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 *)",
+      "Bash(python *)",
+      "Bash(pip show *)",
+      "Bash(where python *)",
+      "Bash(conda info *)",
+      "Bash(jupyter kernelspec *)",
+      "Bash(C:\\\\Users\\\\ornec\\\\anaconda3\\\\python.exe *)",
+      "PowerShell(& \"C:\\\\Users\\\\ornec\\\\anaconda3\\\\python.exe\" -c \"import pandas as pd; import lightgbm; import optuna; import pyarrow; print\\('All packages available'\\); df=pd.read_parquet\\('D:/GitHub/UA_MDM_Labo2_RS/data/tabular/train_fe.parquet'\\); print\\('Train shape:', df.shape\\); print\\('Columns n:', len\\(df.columns\\)\\)\")",
+      "PowerShell(& \"C:\\\\Users\\\\ornec\\\\anaconda3\\\\envs\\\\ldi2_pt28\\\\python.exe\" -c \"import pandas as pd; import lightgbm; import optuna; import pyarrow; print\\('All OK'\\); df=pd.read_parquet\\('D:/GitHub/UA_MDM_Labo2_RS/data/tabular/train_fe.parquet'\\); print\\('Train shape:', df.shape\\); print\\('Cols:', len\\(df.columns\\)\\); print\\('Target cols:', [c for c in df.columns if 'price' in c.lower\\(\\) or 'zpid' in c.lower\\(\\)]\\)\")",
+      "Bash(del *)",
+      "PowerShell(python -c \"import json; json.load\\(open\\(r'D:\\\\GitHub\\\\UA_MDM_Labo2_RS\\\\scripts\\\\custom\\\\02_Regression.ipynb', encoding='utf-8'\\)\\); print\\('JSON valido'\\)\")"
     ]
-  }
+  },
+  "spinnerTipsEnabled": false
 }
