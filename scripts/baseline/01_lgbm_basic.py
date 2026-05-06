@@ -59,3 +59,14 @@ submission = pd.DataFrame({
 })
 submission.to_csv("submissions/Pippin_00.00.csv", index=False)
 print(f"\nSaved submissions/Pippin_00.00.csv ({len(submission)} rows)")
+
+# ── Export train predictions → submissions/test/ ─────────────────────────
+import pathlib
+pathlib.Path("submissions/test").mkdir(parents=True, exist_ok=True)
+
+train_submission = pd.DataFrame({
+    "zpid": train["zpid"],
+    "predicted_price": pred_price,
+})
+train_submission.to_csv("submissions/test/Pippin_00.00.csv", index=False)
+print(f"Saved submissions/test/Pippin_00.00.csv ({len(train_submission)} rows)")
